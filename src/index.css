@@ -5,9 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.component {
+  border: 2px dotted red;
+  margin: 4px;
+  padding: 4px;
+}
+
+#guessrow {
+  display:flex;
+}
+
+ #guesspegs {
+   display:flex;
+ }
+
+.main {
+display:flex;
+
 }

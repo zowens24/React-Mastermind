@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-
+import GameBoard from "./components/GameBoard/GameBoard";
+import ColorPicker from "./components/ColorPicker/ColorPicker";
+import Footer from './components/Footer/Footer';
+import GameTimer from './components/GameTimer/GameTimer';
+import NewGameButton from './components/NewGameButton/NewGameButton';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        React Mastermind
       </header>
+      <main className="main">
+      <GameBoard /><div>
+      <ColorPicker />
+      <GameTimer />
+      <NewGameButton /></div></main>
+      <Footer />
     </div>
   );
 }
 
-export default App;
+export default App; 
